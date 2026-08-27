@@ -26,6 +26,7 @@ A simple console-based calculator application built with C# and .NET.
 
 ```bash
 dotnet run
+```
 
 ## Screenshot
 
