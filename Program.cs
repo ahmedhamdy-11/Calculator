@@ -9,9 +9,17 @@
         continue;
     }
 
-    Console.Write("Enter operator (+, -, *, /): ");
-    string? operation = Console.ReadLine();
+   Console.Write("Enter operator (+, -, *, /): ");
+string? operation = Console.ReadLine();
 
+if (operation != "+" &&
+    operation != "-" &&
+    operation != "*" &&
+    operation != "/")
+{
+    Console.WriteLine("Invalid operator. Please try again.");
+    continue;
+}
     Console.Write("Enter second number: ");
     if (!double.TryParse(Console.ReadLine(), out double secondNumber))
     {
